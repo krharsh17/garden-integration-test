@@ -1,0 +1,7 @@
+# api/garden.yml
+kind: Module
+type: kubernetes
+name: api
+files: [deploy.yml, service.yml, ingress.yml]
+serviceResource:
+  kind: Deployment

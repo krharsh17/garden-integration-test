@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: ui
+  template:
+    metadata:
+      labels:
+        app: ui
+    spec: 
+      containers:
+      - name: ui-pod
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        image: krharsh17/ui-app:1.0

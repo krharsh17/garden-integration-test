@@ -1,0 +1,23 @@
+{
+    "name": "ui",
+    "version": "1.0.0",
+    "description": "The frontend service",
+    "main": "main.js",
+    "scripts": {
+      "start": "node main.js",
+      "test": "\"echo done\"",
+      "integ": "node_modules/mocha/bin/mocha test/integ.js"
+    },
+    "author": "krharsh17",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.16.2",
+      "request": "^2.83.0",
+      "request-promise": "^4.2.2"
+    },
+    "devDependencies": {
+      "mocha": "^5.1.1",
+      "supertest": "^3.0.0"
+    }
+  }
+  

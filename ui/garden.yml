@@ -1,0 +1,12 @@
+# ui/garden.yml
+kind: Module
+type: kubernetes
+name: ui
+files: [deploy.yml, service.yml, ingress.yml]
+serviceResource:
+  kind: Deployment
+tests:
+  - name: integ
+    args: [npm, run, integ]
+    dependencies:
+      - ui
